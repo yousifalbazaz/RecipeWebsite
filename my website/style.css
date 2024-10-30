@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 5px 50px;
+    background-color: #f7f7f7;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar img {
+    height: 75px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 27px;
+    color: #000;
+}
+
+.top-bar a:hover {
+    color: rgb(255, 0, 0);
+}
+body{
+    margin:0px;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.slogan {
+    font-weight: bold;
+    padding: 5px;
+    font-size: x-large;
+    font-family: cursive;
+    color: rgb(153, 12, 12);
+}
+.content {
+    padding: 0 100px 40px 20px;
+}
+
+.content img {
+    float: left;
+    margin-right: 100px; 
+     margin: 20px auto; 
+     margin-left:20px ;
+}
+
+.content-text {   
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc; 
+    border-radius: 15px; 
+    padding: 20px; 
+  
+}
+.content-text p{
+    padding-left: 615px;
+    margin-bottom: 65px;
+}
+
+.More-Recipies{
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    
+}
+.Socials{
+    background: #734060;
+    padding: 10px 70px 20px 70px;
+
+}
+
+.Subscribe{
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 50px 100px 50px 100px;
+    margin: 100px;
+    width: 1000px;
+}
+
+.contact-us{
+    padding: 15px 30px;   
+    font-size: 18px;      
+    font-weight: bold;
+    background-color: #ccc;
+    width: 200px;        
+    height: 60px;         
+    cursor: pointer;    
+}
+
+.banner img{
+    height: 500px; 
+}
+
+.recipe h3 {
+    font-size: 46px;
+}
+
+
+
+.recipe-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.recipe-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 650px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; }
+
+.recipe-box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-box p {
+    font-size: 14px;
+    color: #333;
+}
+
+summary {
+    font-size: 20px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    margin-bottom: 10px;
+}
+.recipe-box2 {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 650px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; }
+
+.recipe-box2 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-box2 p {
+    font-size: 14px;
+    color: #333;}
+
+    .footer {
+        align-items: center;
+        padding: 10px 20px 5px 50px;
+        background-color: black;
+        color: #f0f0f0;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .about img {
+        float: left;      
+        object-fit: cover;      
+        margin: 10px;            
+        border: 5px solid black;
+
+    }
+    
+    .about{
+        background-color: #f0f0f0;
+        padding: 40px 30px 40px 30px;
+    }
+
+    .about-us {
+        padding: 40px 20px 40px 20px;
+    }
+
+
+.Socials img{
+
+    width: 100px;
+    height: 100px;
+    clip-path: circle(40%); 
+    object-fit: cover;
+    cursor: pointer;    
+}
+
+.Our-socials {
+  color: white;
+  position: relative;
+  top: 0px;
+  right: 0;
+  padding: 5px;
+  
+}
+.Help-Support{
+    color: white;
+    position: relative;}
+
+.conclusion{
+    margin-top: 150px;
+}
+
+
+    form {
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px 50px 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    }
+    input, button-1 {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    }
+    .Button-1 {
+    background-color: #4e44a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+    .footer-1 {
+        align-items: center;
+        padding: 10px 20px 5px 50px;
+        background-color: black;
+        color: #f0f0f0;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 24%;
+    }

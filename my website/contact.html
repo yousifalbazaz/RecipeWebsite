@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+      
+
+    </head>
+    <body>
+    <div class="top-bar">
+        <img src="images/logo.png" alt="logo image">
+        <div class="menue">
+            <a href="index.html">Home</a> 
+            <a href="Recipies.html">Recipies</a>
+            <a href="about.html">About</a>
+             <a href="contact.html">Contact</a>
+        </div>
+        </div>
+    </body>
+
+
+ <!-- Firebase SDK -->
+ <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+ <script>
+ // Firebase configuration copied from Firebase Console
+ const firebaseConfig = {
+  apiKey: "AIzaSyDS2cdgcwt1Wm2-4vdgp020MiQRoXYANoA",
+  authDomain: "my-recipe-website-650e6.firebaseapp.com",
+  databaseURL: "https://my-recipe-website-650e6-default-rtdb.firebaseio.com",
+  projectId: "my-recipe-website-650e6",
+  storageBucket: "my-recipe-website-650e6.appspot.com",
+  messagingSenderId: "1046417606143",
+  appId: "1:1046417606143:web:262131dcc7d0446e21d3ca"
+};
+
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+ // Reference to the Realtime Database
+ var database = firebase.database();
+
+ // Function to submit data to Firebase
+ function submitContactForm(event) {
+ event.preventDefault(); // Prevent the form from refreshing the page
+ var name = document.getElementById("name").value;
+ var email = document.getElementById("email").value;
+ var inquiry = document.getElementById("inquiry").value;
+ // Save data to Firebase
+ database.ref('contacts').push({
+ name: name,
+ email: email,
+ inquiry: inquiry
+ }).then(function() {
+ alert("Thank you for submitting!");
+ }).catch(function(error) {
+ alert("Error: " + error.message);
+ });
+ // Clear the form fields
+ document.getElementById("contactForm").reset();
+ }
+ </script>
+</head>
+
+ <h1>Contact Us</h1>
+ <form id="contactForm" onsubmit="submitContactForm(event)">
+ <input type="text" id="name" name="name" placeholder="Your Name" required>
+ <input type="email" id="email" name="email" placeholder="Your Email" required>
+ <input type="text" id="inquiry" name="inquiry" placeholder="Inquiry" required>
+ <button class="Button-1" type="submit">Submit</button>
+ <a href="index.html">Back to Home</a>
+ </form>
+
+ <footer>
+    <div class="footer-1">
+        <p>ALL rights reserved</p>
+
+    </div>
+</footer>
+</html
